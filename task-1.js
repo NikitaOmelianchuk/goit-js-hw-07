@@ -1,7 +1,6 @@
 const listRef = document.querySelector('#categories');
-const itemsRef = listRef.children;
-console.log(`В списке ${itemsRef.length} категории`);
-const itemsChildEl = document.querySelectorAll('.item');
+console.log(`В списке ${listRef.children.length} категории`);
+const itemsChildEl = listRef.querySelectorAll('.item');
 itemsChildEl.forEach(item =>
   console.log(
     `Категория: ${item.querySelector('h2').textContent}
